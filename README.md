@@ -15,3 +15,9 @@ python main.py
 
 # 附录
 客户端（浏览器）可以搭配SwitchyOmega插件
+
+
+# 交流
+
+telegram：
+https://t.me/+R9XbnrGZIhA0ZmFl
