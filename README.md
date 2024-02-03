@@ -18,6 +18,3 @@ python main.py
 
 
 # 交流
-
-telegram：
-https://t.me/+R9XbnrGZIhA0ZmFl
