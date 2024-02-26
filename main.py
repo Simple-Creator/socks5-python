@@ -103,10 +103,10 @@ class Socks5ProxyServer:
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="Async Socks5 Proxy")
-    parser.add_argument("--host", default="0.0.0.0", help="host:默认为：0.0.0.0")
-    parser.add_argument("--port", default="1080", help="端口:默认为：1080")
-    parser.add_argument("--username", default="admin", help="用户名: 默认为：admin")
-    parser.add_argument("--password", default="admin", help="密码: 默认为：admin")
+    parser.add_argument("--host", default="0.0.0.0", help="default host:0.0.0.0")
+    parser.add_argument("--port", default="1080", help="default port:1080")
+    parser.add_argument("--username", default="admin", help="default username:admin")
+    parser.add_argument("--password", default="admin", help="default password:admin")
     args = parser.parse_args()
 
     proxy_server = Socks5ProxyServer(args.host, int(args.port), args.username, args.password)
