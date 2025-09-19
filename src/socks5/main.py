@@ -100,9 +100,8 @@ class Socks5ProxyServer:
         except KeyboardInterrupt:
             server.close()
 
-
-if __name__ == "__main__":
-    parser = ArgumentParser(description="Async Socks5 Proxy")
+def main():
+    arser = ArgumentParser(description="Async Socks5 Proxy")
     parser.add_argument("--host", default="0.0.0.0", help="default host:0.0.0.0")
     parser.add_argument("--port", default="1080", help="default port:1080")
     parser.add_argument("--username", default="admin", help="default username:admin")
@@ -111,3 +110,7 @@ if __name__ == "__main__":
 
     proxy_server = Socks5ProxyServer(args.host, int(args.port), args.username, args.password)
     asyncio.run(proxy_server.start())
+
+
+if __name__ == "__main__":
+    main()
