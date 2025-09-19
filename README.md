@@ -8,20 +8,17 @@
 
 ```bash
 # 使用pip安装
-pip install socks5
-
-# 或者使用uv安装（推荐）
-uv add socks5
+pip install xsocks5
 ```
 
 ### 启动代理服务器
 
 ```bash
 # 使用默认参数启动
-socks5
+xsocks5
 
 # 自定义参数启动
-socks5 --host 0.0.0.0 --port 1080 --username myuser --password mypass
+xsocks5 --host 0.0.0.0 --port 1080 --username myuser --password mypass
 ```
 
 #### 参数说明
@@ -31,15 +28,6 @@ socks5 --host 0.0.0.0 --port 1080 --username myuser --password mypass
 - `--username`: 认证用户名，默认为 `admin`
 - `--password`: 认证密码，默认为 `admin`
 
-### 客户端配置
-
-在需要使用代理的应用程序中配置以下信息：
-
-- 代理类型：SOCKS5
-- 服务器地址：代理服务器所在的主机IP
-- 端口：与启动时指定的端口一致（默认1080）
-- 用户名：与启动时指定的用户名一致（默认admin）
-- 密码：与启动时指定的密码一致（默认admin）
 
 ## 开发
 
@@ -62,25 +50,11 @@ socks5/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/socks5.git
-cd socks5
+git clone https://github.com/Simple-Creator/socks5-python.git
+cd socks5-python
 
 # 使用uv创建虚拟环境并安装依赖
-uv venv
-uv pip install -e .
-
-# 安装开发依赖
-uv pip install -e ".[dev]"
-```
-
-### 运行测试
-
-```bash
-# 使用uv运行测试
-uv run pytest
-
-# 或者直接使用pytest
-pytest
+uv sync
 ```
 
 ## 功能特点

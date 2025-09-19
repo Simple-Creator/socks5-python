@@ -7,7 +7,7 @@ requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
-socks5 = "socks5.main:main"
+socks5 = "xsocks5.main:main"
 
 [build-system]
 requires = ["hatchling"]
