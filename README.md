@@ -35,6 +35,7 @@ xsocks5 --host 0.0.0.0 --port 1080 --username myuser --password mypass
   - 端口：与启动时指定的端口一致（默认1080）
   - 用户名：与启动时指定的用户名一致（默认admin）
   - 密码：与启动时指定的密码一致（默认admin）
+- 也可搭配clash等客户端使用
 
 ## 开发
 
