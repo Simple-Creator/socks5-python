@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "A SOCKS5 proxy"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "asyncio>=4.0.0",
+]
 authors = [
     { name = "SimpleCreator", email = "ipowerink@gmail.com" }
 ]
