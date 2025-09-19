@@ -101,7 +101,7 @@ class Socks5ProxyServer:
             server.close()
 
 def main():
-    arser = ArgumentParser(description="Async Socks5 Proxy")
+    parser = ArgumentParser(description="Async Socks5 Proxy")
     parser.add_argument("--host", default="0.0.0.0", help="default host:0.0.0.0")
     parser.add_argument("--port", default="1080", help="default port:1080")
     parser.add_argument("--username", default="admin", help="default username:admin")

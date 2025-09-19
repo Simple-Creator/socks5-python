@@ -1,5 +1,5 @@
 [project]
-name = "socks5"
+name = "xsocks5"
 version = "0.1.0"
 description = "A SOCKS5 proxy"
 readme = "README.md"
@@ -10,7 +10,7 @@ authors = [
 ]
 
 [project.scripts]
-socks5 = "xsocks5.main:main"
+xsocks5 = "xsocks5.main:main"
 
 [build-system]
 requires = ["hatchling"]
