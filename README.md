@@ -41,7 +41,7 @@ xsocks5 --host 0.0.0.0 --port 1080 --username myuser --password mypass
 ### 项目结构
 
 ```
-socks5/
+xsocks5/
 ├── src/
 │   └── xsocks5/
 │       ├── __init__.py
